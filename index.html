@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only Pans Payment</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #top {
+            background-image: linear-gradient(to right,#3094cf, white);
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Sofia", sans-serif;
+            color: white;
+        }
+
+        #bottom{
+            color: white;
+            font-family: "Sofia", sans-serif;
+            font-size: 25px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            text-align: center;
+            padding: 100px;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav {
+            width: 100vw;
+            height: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #59A9D9;
+
+        }
+
+        .divContainer {
+            display: flex;
+            flex-direction: row;
+            margin: 50px;
+            height: 500px;
+            margin-top: 0px;
+        }
+
+        .div1 {
+            width: 100%;
+        }
+
+        footer {
+            background-color: #3094cf;
+            width: 100%;
+            height: 300px;
+            margin-top: 400px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            margin-left: 50px;
+            font-size: 22px;
+            font-family: cursive;
+        }
+
+        #f1 {
+            height: 1000px;
+        }
+
+        label {
+            margin-left: 100px;
+        }
+
+        #field {
+            border-color: transparent;
+            background-color: #3095cf54;
+            border-radius: 10px;
+        }
+
+        .field2 {
+            background-color: transparent;
+            border-color: transparent;
+        }
+
+        .leg1 {
+            display: flex;
+            background-color: #3094cf;
+            margin-bottom: 20px;
+            color: white;
+            border-radius: 10px;
+            width: 1300px;
+            height: 25px;
+            text-indent: 10px;
+        }
+        input{
+            border-color: transparent;
+        }
+        #sub{
+            margin-top: 20px;
+            border-radius: 10px;
+            margin-left: 550px;
+            height: 30px;
+            width: 200px;
+            background-color: #59A9D9;
+        }
+        .botItems{
+            margin-top: 50px;
+        }
+        #copy{
+            text-align: center;
+            font-size: 12px;
+        }
+        #space{
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="top">
+        <h1>Only Pans Payment</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ourModels">Our Models</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Contact">Sign In</a></li>
+        </ul>
+    </nav>
+    <h2 id="a">Payment Form</h2>
+    <div class="divContainer">
+        <div class="div1">
+            <form id="f1">
+                <fieldset id="field">
+                    <legend class="leg1">Sign Up</legend>
+                    <label for="user">Username</label>
+                    <input type="text" id="user" placeholder ="ex: robloxboy123">
+                    <br><br>
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" placeholder="12345">
+                    <br><br>
+                    <label for="che">Save Password?</label>
+                    <input type="checkbox" id="che">
+                    <br><br>
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" placeholder="Daddy@example.com" required>
+                    <br><br>
+                    <label for="slide">Rate Us 1-5 and email us why</label>
+                    <input type="range" id="slide">
+                    <fieldset class="field2">
+                    <legend class="leg1">Billing Information (required)</legend>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" placeholder="first name" required>
+                    <br><br>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" placeholder="last name" required>
+                    <br><br>
+                    <label for="gen">Male</label>
+                <input type="radio" id="gen" name="Gender" value="male">
+                <label for="gen">Female</label>
+                <input type="radio" id="gen" name="Gender" value="female">
+                <br><br>
+                    <label for="addy">Address</label>
+                    <input type="text" id="addy" required>
+                    <br><br>
+                    <label for="Cit">City</label>
+                    <input type="text" id="Cit" required>
+                    <br><br>
+                    <label for="Stat">State</label>
+                    <select id="Stat" name="state" required>
+                        <value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="California">California</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Connecticut">Connecticut</option>
+                        <option value="Delaware">Delaware</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Idaho">Idaho</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Indiana">Indiana</option>
+                        <option value="Iowa">Iowa</option>
+                        <option value="Kansas">Kansas</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Louisiana">Louisiana</option>
+                        <option value="Maine">Maine</option>
+                        <option value="Maryland">Maryland</option>
+                        <option value="Massachusetts">Massachusetts</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Minnesota">Minnesota</option>
+                        <option value="Mississippi">Mississippi</option>
+                        <option value="Missouri">Missouri</option>
+                        <option value="Montana">Montana</option>
+                        <option value="Nebraska">Nebraska</option>
+                        <option value="Nevada">Nevada</option>
+                        <option value="New Hampshire">New Hampshire</option>
+                        <option value="New Jersey">New Jersey</option>
+                        <option value="New Mexico">New Mexico</option>
+                        <option value="New York">New York</option>
+                        <option value="North Carolina">North Carolina</option>
+                        <option value="North Dakota">North Dakota</option>
+                        <option value="Ohio">Ohio</option>
+                        <option value="Oklahoma">Oklahoma</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Pennsylvania">Pennsylvania</option>
+                        <option value="Rhode Island">Rhode Island</option>
+                        <option value="South Carolina">South Carolina</option>
+                        <option value="South Dakota">South Dakota</option>
+                        <option value="Tennessee">Tennessee</option>
+                        <option value="Texas">Texas</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Vermont">Vermont</option>
+                        <option value="Virginia">Virginia</option>
+                        <option value="Virgin Islands">Virgin Islands</option>
+                        <option value="Washington">Washington</option>
+                        <option value="West Virginia">West Virginia</option>
+                        <option value="Wisconsin">Wisconsin</option>
+                        <option value="Wyoming">Wyoming</option>
+                    </select>
+                    <br><br>
+                    <label for="zip">Zip/Postal Code</label>
+                    <input type="number" id="zip" required>
+                    <br><br>
+                    <label for="count">Country</label>
+                    <input type="text" id="count" required>
+                    <br><br>
+                    <label for="num">Phone Number</label>
+                    <input type="tel" id="num" required>
+                    <br><br>
+                    </fieldset>
+                    <fieldset class="field2">
+                        <legend class="leg1">Credit Card Information (required)</legend>
+                        <label for="cnum">Credit Card Number</label>
+                        <input type="text" id="cnum" required placeholder="0000-0000-0000-0000">
+                        <br><br>
+                        <label for="dat">Expiration Date</label>
+                        <input type="date" id="dat" required>
+                        <br><br>
+                        <label for="sec">CVV</label>
+                        <input type="number" id="sec" required>
+                    </fieldset>
+                </fieldset>
+                <input type="Submit" id="sub">
+
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p id="bottom" >Only Pans</p>
+        <table style="width:100%">
+            <tr class="botItems">
+                <th>Contact Us</th>
+                <th>Our Services</th>
+                <th>Models</th>
+                <th>Affiliates</th>
+            </tr>
+        </table>
+        <hr id="space">
+        <p id="copy">Copyright 1999-2022 by Refsnes Data. All Rights Reserved.
+            Only Pans is Powered by OnlyPans.com</p>
+    </footer>
+</body>
+
+</html>
