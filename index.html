@@ -153,27 +153,28 @@
             <form id="f1">
                 <fieldset id="field">
                     <legend class="leg1">Sign Up</legend>
+
                     <label for="user">Username</label>
-                    <input type="text" id="user" placeholder ="ex: robloxboy123">
+                    <input type="text" id="user" value=""  placeholder ="  "  pattern="[A-Za-z]{6,12}"  required>
                     <br><br>
                     <label for="pass">Password</label>
-                    <input type="password" id="pass" placeholder="12345">
+                    <input type="password" id="pass" placeholder="12345" value="" pattern="\w{1,}\W{1,}\d{1,}">
                     <br><br>
                     <label for="che">Save Password?</label>
                     <input type="checkbox" id="che">
                     <br><br>
                     <label for="mail">Email</label>
-                    <input type="email" id="mail" placeholder="Daddy@example.com" required>
+                    <input type="email" id="mail" placeholder="Daddy@example.com" required value="" pattern="\w{1,}\d{1,}\D{1,}@[a-zA-z.[a-z]{2,}">
                     <br><br>
                     <label for="slide">Rate Us 1-5 and email us why</label>
-                    <input type="range" id="slide">
+                    <input type="range" id="slide" maxlength="5">
                     <fieldset class="field2">
                     <legend class="leg1">Billing Information (required)</legend>
                     <label for="fname">First Name</label>
-                    <input type="text" id="fname" placeholder="first name" required>
+                    <input type="text" id="fname" placeholder="first name"  value="" pattern="[a-zA-Z]{2,}" required>
                     <br><br>
                     <label for="lname">Last Name</label>
-                    <input type="text" id="lname" placeholder="last name" required>
+                    <input type="text" id="lname" placeholder="last name" value="" pattern="[a-zA-Z]{2,}"required>
                     <br><br>
                     <label for="gen">Male</label>
                 <input type="radio" id="gen" name="Gender" value="male">
@@ -181,10 +182,10 @@
                 <input type="radio" id="gen" name="Gender" value="female">
                 <br><br>
                     <label for="addy">Address</label>
-                    <input type="text" id="addy" required>
+                    <input type="text" id="addy" required value="" pattern="/d{1,7}[a-zA-Z]{3,20}">
                     <br><br>
                     <label for="Cit">City</label>
-                    <input type="text" id="Cit" required>
+                    <input type="text" id="Cit" required value="" pattern="[A-Za-z]{3,12}">
                     <br><br>
                     <label for="Stat">State</label>
                     <select id="Stat" name="state" required>
@@ -242,25 +243,25 @@
                     </select>
                     <br><br>
                     <label for="zip">Zip/Postal Code</label>
-                    <input type="number" id="zip" required>
+                    <input type="number" id="zip" required value="" pattern="\d{5}">
                     <br><br>
                     <label for="count">Country</label>
-                    <input type="text" id="count" required>
+                    <input type="text" id="count" required value="" pattern="[A-Z]{2,20}">
                     <br><br>
                     <label for="num">Phone Number</label>
-                    <input type="tel" id="num" required>
+                    <input type="tel" id="num" pattern="\d{3}-\d{3}-\d{4}" value="" required>
                     <br><br>
                     </fieldset>
                     <fieldset class="field2">
                         <legend class="leg1">Credit Card Information (required)</legend>
                         <label for="cnum">Credit Card Number</label>
-                        <input type="text" id="cnum" required placeholder="0000-0000-0000-0000">
+                        <input type="text" id="cnum" required placeholder="0000000000000000" value="" pattern="\d{16}">
                         <br><br>
                         <label for="dat">Expiration Date</label>
                         <input type="date" id="dat" required>
                         <br><br>
                         <label for="sec">CVV</label>
-                        <input type="number" id="sec" required>
+                        <input type="number" id="sec" required value="" pattern="\d{3}">
                     </fieldset>
                 </fieldset>
                 <input type="Submit" id="sub">
